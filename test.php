@@ -21,6 +21,7 @@ ini_set('display_errors', true);
 ini_set('html_errors', false);
 
 require_once 'lib/XBEL.php';
+require_once 'lib/SAX/TagDisplay.php';
 require_once 'lib/UrlGatherer.php';
 
 SAX\TagDisplay::run("example-xbel.xml");
