@@ -11,6 +11,7 @@ class Alias
 {
 	/** 
 	 * The target Node.
+	 * @var Node
 	 */
 	var $target;
 	

@@ -12,11 +12,13 @@ class Folder extends NamedNode
 {
 	/**
 	 * The list of child Nodes.
+	 * @var array(Node)
 	 */
 	var $children = array();
 	
 	/**
 	 * Whether or not this folder is currently collapsed.
+	 * @var bool
 	 */
 	var $folded = false;
 	

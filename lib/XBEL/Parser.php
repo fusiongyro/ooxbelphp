@@ -41,6 +41,7 @@ class Parser extends \SAX\Parser
 	 * The stack of elements. This grows and shrinks while parsing and should 
 	 * ultimately contain just one element if parsing is successful.
 	 * 
+	 * @var array(Node)
 	 * @access private 
 	 */
 	var $elementStack = array();
@@ -48,6 +49,7 @@ class Parser extends \SAX\Parser
 	/**
 	 * The currently-active element during parsing.
 	 *
+	 * @var Node
 	 * @access private 
 	 */
 	var $currentElement;
@@ -56,6 +58,7 @@ class Parser extends \SAX\Parser
 	 * The mapping from ID strings to Node elements. Initially empty, as we see
 	 * nodes with IDs during parsing this will be populated.
 	 *
+	 * array(string => Node)
 	 * @access private 
 	 */
 	var $idmap = array();
@@ -259,6 +262,7 @@ class AliasResolver extends AbstractXBELVisitor
 {
 	/**
 	 * Mapping from ID string to Node instance.
+	 * @var array(string => Node)
 	 */
 	var $idmap;
 	

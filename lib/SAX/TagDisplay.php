@@ -29,6 +29,7 @@ class TagDisplay extends Parser
 {
 	/**
 	 * @access private
+	 * @var int
 	 */
 	var $indent = 0;
 	

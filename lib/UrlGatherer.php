@@ -11,7 +11,10 @@ namespace XBEL;
  */
 class URLGatherer extends AbstractXBELVisitor
 {
-	/** @access private */
+	/**
+	 * @type array(string)
+	 * @access private
+	 */
 	var $urls = array();
 
 	/** 

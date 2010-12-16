@@ -12,16 +12,19 @@ class Bookmark extends NamedNode
 {
 	/**
 	 * The HTTP destination of this bookmark.
+	 * @var string
 	 */
 	var $href;
 	
 	/**
 	 * The last time this bookmark was visited.
+	 * @var string
 	 */
 	var $visited;
 	
 	/**
 	 * The last time this bookmark was edited.
+	 * @var string
 	 */
 	var $modified;
 	

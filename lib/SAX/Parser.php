@@ -24,6 +24,7 @@ class Parser
 {
 	/**
 	 * @access private
+	 * @var handle the xml_parser handle
 	 */
 	var $parser;
 	
