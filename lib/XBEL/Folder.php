@@ -8,7 +8,7 @@ namespace XBEL;
  * 
  * @package XBEL
  */
-class Folder extends Node
+class Folder extends NamedNode
 {
 	/**
 	 * The list of child Nodes.

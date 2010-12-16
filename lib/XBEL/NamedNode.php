@@ -4,11 +4,12 @@
 namespace XBEL;
 
 /** 
- * Parent class for all XBEL node types. 
+ * Parent class for all nameable/identifiable XBEL node types. In
+ * practice, limited to Bookmark and Folder.
  * 
  * @package XBEL
  */
-class Node
+class NamedNode extends Node
 {
 	/**
 	 * The title of this folder or bookmark.
@@ -31,16 +32,6 @@ class Node
 	 * XBEL document.
 	 */
 	var $added;
-	
-	/**
-	 * Process this branch of an XBEL document with the supplied XBELVisitor 
-	 * <var>$visitor</var>.
-	 * 
-	 * Must be implemented by descendent classes.
-	 * 
-	 * @param XBELVisitor $visitor the visitor to be passed along the XBEL structure
-	 */
-	function visit($visitor) {}
 }
 
 ?>

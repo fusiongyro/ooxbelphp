@@ -8,7 +8,7 @@ namespace XBEL;
  * 
  * @package XBEL
  */
-class Bookmark extends Node
+class Bookmark extends NamedNode
 {
 	/**
 	 * The HTTP destination of this bookmark.

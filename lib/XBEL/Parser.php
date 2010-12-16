@@ -136,7 +136,9 @@ class Parser extends \SAX\Parser
 	 */
 	private function folder($attrs)
 	{
-		$this->pushAndApplyNode(new Folder(), $attrs);
+		$folder = new Folder();
+		$folder->folded = isset($attrs['FOLDED']) && $attrs['FOLDED'] == 'true';
+		$this->pushAndApplyNode($folder, $attrs);
 	}
 	
 	/**
