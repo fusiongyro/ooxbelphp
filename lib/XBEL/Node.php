@@ -4,10 +4,10 @@ namespace XBEL;
 
 /** 
  * Parent class for all XBEL node types. 
- *
- * @package OOTutorial
+ * 
+ * @package XBEL
  */
-class XBELNode
+class Node
 {
 	/**
 	 * The title of this folder or bookmark.

@@ -4,8 +4,8 @@ namespace XBEL;
 
 /** 
  * A Visitor pattern implementation for XBEL documents.
- *
- * @package OOTutorial
+ * 
+ * @package XBEL
  */
 interface XBELVisitor
 {

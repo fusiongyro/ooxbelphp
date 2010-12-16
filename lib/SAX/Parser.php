@@ -18,7 +18,7 @@ namespace SAX;
  * 
  * @package SAX
  */
-class SAXParser
+class Parser
 {
 	/**
 	 * @access private

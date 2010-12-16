@@ -2,7 +2,11 @@
 
 namespace XBEL;
 
-class XBELAlias
+/**
+ * 
+ * @package XBEL
+ */
+class Alias
 {
 	/** 
 	 * @access private 

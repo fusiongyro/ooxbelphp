@@ -4,10 +4,10 @@ namespace XBEL;
 
 /** 
  * Represents a bookmark in XBEL. 
- *
- * @package OOTutorial
+ * 
+ * @package XBEL
  */
-class XBELBookmark extends XBELNode
+class Bookmark extends Node
 {
 	/**
 	 * The HTTP destination of this bookmark.

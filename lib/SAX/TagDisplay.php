@@ -21,9 +21,9 @@ namespace SAX;
  * &lt;/FOO>
  * </pre>
  * 
- * @package OOTutorial
+ * @package SAX
  */
-class TagDisplay extends SAXParser
+class TagDisplay extends Parser
 {
 	/**
 	 * @access private

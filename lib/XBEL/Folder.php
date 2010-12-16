@@ -5,9 +5,9 @@ namespace XBEL;
 /** 
  * Represents a folder in XBEL. 
  * 
- * @package OOTutorial
+ * @package XBEL
  */
-class XBELFolder extends XBELNode
+class Folder extends Node
 {
 	/**
 	 * The list of child XBELNodes.

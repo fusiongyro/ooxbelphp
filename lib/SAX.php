@@ -1,6 +1,6 @@
 <?php
 
-require_once 'SAX/SAXParser.php';
+require_once 'SAX/Parser.php';
 require_once 'SAX/TagDisplay.php';
 
 ?>

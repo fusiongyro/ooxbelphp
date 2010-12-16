@@ -31,10 +31,10 @@ namespace XBEL;
  *   &lt;/folder>
  * &lt;/xbel>
  * </pre>
- *
- * @package OOTutorial
+ * 
+ * @package XBEL
  */
-class XBELParser extends \SAX\SAXParser
+class Parser extends \SAX\Parser
 {
 	/** @access private */
 	var $elementStack = array();
@@ -48,7 +48,7 @@ class XBELParser extends \SAX\SAXParser
 	function __construct()
 	{
 		parent::__construct();
-		$this->elementStack[] = new XBELFolder();
+		$this->elementStack[] = new Folder();
 	}
 	
 	/** 
@@ -59,7 +59,7 @@ class XBELParser extends \SAX\SAXParser
 	 */
 	static function parseXBEL($filename)
 	{
-		$xbp = new XBELParser();
+		$xbp = new Parser();
 		$xbp->parse($filename);
 		return $xbp->getRoot();
 	}
@@ -97,19 +97,19 @@ class XBELParser extends \SAX\SAXParser
 	// creates a new folder and fixes up the stack
 	private function folder()
 	{
-		$this->pushNode(new XBELFolder());
+		$this->pushNode(new Folder());
 	}
 	
 	// creates a new bookmark and fixes up the stack
 	private function bookmark($href)
 	{
-		$this->pushNode(new XBELBookmark($href));
+		$this->pushNode(new Bookmark($href));
 	}
 	
 	// creates a separator
 	private function separator()
 	{
-		$this->currentElement()->children[] = new XBELSeparator();
+		$this->currentElement()->children[] = new Separator();
 	}
 	
 	// fixes up the stack for a given node

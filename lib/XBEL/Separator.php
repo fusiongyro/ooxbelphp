@@ -2,7 +2,10 @@
 
 namespace XBEL;
 
-class XBELSeparator
+/**
+ * @package XBEL
+ */
+class Separator
 {
 	function visit($visitor) 
 	{

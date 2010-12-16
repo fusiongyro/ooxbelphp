@@ -12,8 +12,6 @@
  * - A simple XBEL Visitor-pattern implementation, {@link XBELVisitor}
  * - An example use of XBELVisitor, {@link URLGatherer}, which gathers up URLs from
  *     under all the nodes in the XBEL document.
- * 
- * @package OOTutorial
  */
 
 error_reporting(E_ALL);
@@ -25,7 +23,7 @@ require_once 'lib/XBEL.php';
 require_once 'lib/UrlGatherer.php';
 
 SAX\TagDisplay::run("example-xbel.xml");
-$bookmarks = XBEL\XBELParser::parseXBEL("example-xbel.xml");
+$bookmarks = XBEL\Parser::parseXBEL("example-xbel.xml");
 var_dump($bookmarks);
 
 // gather up all the URLs

@@ -2,8 +2,8 @@
 
 /**
  * Visitor class for gathering up all the URLs in an XBEL document.
- *
- * @package OOTutorial
+ * 
+ * @package XBEL
  */
 class URLGatherer extends XBEL\AbstractXBELVisitor
 {
