@@ -20,6 +20,18 @@ class Node
 	var $description;
 	
 	/**
+	 * A textual identifier for this node. Aliases will use this to point to 
+	 * this node.
+	 */
+	var $id;
+	
+	/**
+	 * A string indicating the date and/or time when this node was added to the
+	 * XBEL document.
+	 */
+	var $added;
+	
+	/**
 	 * Process this branch of an XBEL document with the supplied XBELVisitor 
 	 * <var>$visitor</var>.
 	 * 

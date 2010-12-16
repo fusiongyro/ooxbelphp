@@ -14,6 +14,16 @@ class Bookmark extends Node
 	 */
 	var $href;
 	
+	/**
+	 * The last time this bookmark was visited.
+	 */
+	var $visited;
+	
+	/**
+	 * The last time this bookmark was edited.
+	 */
+	var $modified;
+	
 	function __construct($href)
 	{
 		// parent::__construct();
