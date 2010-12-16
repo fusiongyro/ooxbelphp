@@ -1,5 +1,6 @@
 <?php
 
+/** @package XBEL */
 namespace XBEL;
 
 /** 
@@ -24,12 +25,20 @@ class Bookmark extends Node
 	 */
 	var $modified;
 	
+	/**
+	 * Constructor
+	 * @param string $href the URL of this bookmark's destination.
+	 */
 	function __construct($href)
 	{
 		//parent::__construct();
 		$this->href = $href;
 	}
 	
+	/**
+	 * Visit this Bookmark
+	 * @param XBELVisitor $visitor the visitor
+	 */
 	function visit($visitor)
 	{
 		$visitor->visitBookmark($this);

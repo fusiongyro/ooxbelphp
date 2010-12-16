@@ -1,5 +1,6 @@
 <?php
 
+/** @package XBEL */
 namespace XBEL;
 
 /** 
@@ -21,6 +22,7 @@ class Folder extends Node
 	
 	/**
 	 * Visit this folder. Passes the visitor down to all contained elements.
+	 * @param XBELVisitor $visitor the visitor
 	 */
 	function visit($visitor)
 	{

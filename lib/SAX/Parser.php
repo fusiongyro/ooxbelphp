@@ -1,5 +1,7 @@
 <?php
 
+/** @package SAX */
+
 namespace SAX;
 
 /**
@@ -169,6 +171,7 @@ class Parser
 		$this->endDocument();
 	}
 	
+	/** @access private */
 	function __get($name)
 	{
 		switch ($name)

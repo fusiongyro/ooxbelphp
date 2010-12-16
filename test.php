@@ -12,8 +12,10 @@
  * - A simple XBEL Visitor-pattern implementation, {@link XBELVisitor}
  * - An example use of XBELVisitor, {@link URLGatherer}, which gathers up URLs from
  *     under all the nodes in the XBEL document.
+ * @package test
  */
 
+/** */
 error_reporting(E_ALL);
 ini_set('display_errors', true);
 ini_set('html_errors', false);
@@ -28,7 +30,7 @@ var_dump($bookmarks);
 
 // gather up all the URLs
 echo "\n";
-foreach (URLGatherer::gather($bookmarks) as $url)
+foreach (XBEL\URLGatherer::gather($bookmarks) as $url)
 	echo "  Got URL: $url\n";
 
 ?>

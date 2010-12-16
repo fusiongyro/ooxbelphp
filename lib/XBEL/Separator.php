@@ -1,5 +1,6 @@
 <?php
 
+/** @package XBEL */
 namespace XBEL;
 
 /**
@@ -11,6 +12,7 @@ class Separator
 {
 	/**
 	 * Visit this separator.
+	 * @param XBELVisitor $visitor the visitor to be passed along the XBEL structure
 	 */
 	function visit($visitor) 
 	{

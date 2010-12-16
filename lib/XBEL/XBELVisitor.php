@@ -3,8 +3,11 @@
 namespace XBEL;
 
 /** 
+ * @package XBEL
+ */
+
+/** 
  * A Visitor pattern implementation for XBEL documents.
- * 
  * @package XBEL
  */
 interface XBELVisitor
@@ -12,21 +15,21 @@ interface XBELVisitor
 	/**
 	 * Called when a folder is visited.
 	 * 
-	 * @param XBELFolder $folder the folder
+	 * @param Folder $folder the folder
 	 */
 	public function visitFolder($folder);
 
 	/**
 	 * Called when a bookmark is visited.
 	 *
-	 * @param XBELBookmark $bookmark the bookmark
+	 * @param Bookmark $bookmark the bookmark
 	 */
 	public function visitBookmark($bookmark);
 
 	/**
 	 * Called when a separator is visited.
 	 *
-	 * @param XBELSeparator $separator the separator
+	 * @param Separator $separator the separator
 	 */
 	public function visitSeparator($separator);
 	
@@ -38,6 +41,8 @@ interface XBELVisitor
 	 * natural setting at one point or another during processing, so this method
 	 * is probably only interesting to you if you're concerned primarily with
 	 * the structure of the bookmarks rather than the contents of them.
+	 * 
+	 * @param Alias $alias the alias
 	 */
 	public function visitAlias($alias);
 }

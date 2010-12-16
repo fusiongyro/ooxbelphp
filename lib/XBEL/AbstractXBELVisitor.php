@@ -1,5 +1,6 @@
 <?php
 
+/** @package XBEL */
 namespace XBEL;
 
 /** 

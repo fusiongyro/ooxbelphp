@@ -2,6 +2,8 @@
 
 namespace SAX;
 
+/** @package SAX */
+
 /** 
  * This is a simple example of a SAX parser using the above API. 
  * 

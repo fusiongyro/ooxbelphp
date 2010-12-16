@@ -1,5 +1,6 @@
 <?php
 
+/** @package XBEL */
 namespace XBEL;
 
 /** 
@@ -250,9 +251,13 @@ class Parser extends \SAX\Parser
  * parsed node in the tree.
  *
  * @access private
+ * @package XBEL
  */
 class AliasResolver extends AbstractXBELVisitor
 {
+	/**
+	 * Mapping from ID string to Node instance.
+	 */
 	var $idmap;
 	
 	/**
@@ -266,8 +271,6 @@ class AliasResolver extends AbstractXBELVisitor
 	/**
 	 * Replaces $alias->target with the Node corresponding to the ID, looking in
 	 * our private ID map.
-	 *
-	 * @access private
 	 */
 	public function visitAlias($alias)
 	{

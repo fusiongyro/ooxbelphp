@@ -1,5 +1,6 @@
 <?php
 
+/** @package XBEL */
 namespace XBEL;
 
 /**
@@ -18,6 +19,10 @@ class Alias
 		$this->target = $target;
 	}
 	
+	/**
+	 * Visit this Alias
+	 * @param XBELVisitor $visitor the visitor
+	 */
 	function visit($visitor)
 	{
 		$visitor->visitAlias($this);

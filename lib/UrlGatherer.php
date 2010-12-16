@@ -1,11 +1,15 @@
 <?php
 
+/** @package XBEL */
+
+namespace XBEL;
+
 /**
  * Visitor class for gathering up all the URLs in an XBEL document.
  * 
  * @package XBEL
  */
-class URLGatherer extends XBEL\AbstractXBELVisitor
+class URLGatherer extends AbstractXBELVisitor
 {
 	/** @access private */
 	var $urls = array();
