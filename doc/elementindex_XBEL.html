@@ -25,6 +25,8 @@
 	<a class="index-letter" href="elementindex_XBEL.html#f">f</a>
 	<a class="index-letter" href="elementindex_XBEL.html#g">g</a>
 	<a class="index-letter" href="elementindex_XBEL.html#h">h</a>
+	<a class="index-letter" href="elementindex_XBEL.html#i">i</a>
+	<a class="index-letter" href="elementindex_XBEL.html#m">m</a>
 	<a class="index-letter" href="elementindex_XBEL.html#n">n</a>
 	<a class="index-letter" href="elementindex_XBEL.html#p">p</a>
 	<a class="index-letter" href="elementindex_XBEL.html#s">s</a>
@@ -69,6 +71,13 @@
 		<div style="clear: both"></div>
 	</div>
 	<dl>
+			<dt class="field">
+						<span class="var-title">$added</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Node.html#var$added">Node::$added</a> in Node.php</div>
+							<div class="index-item-description">A string indicating the date and/or time when this node was added to the  XBEL document.</div>
+					</dd>
 			<dt class="field">
 						AbstractXBELVisitor
 					</dt>
@@ -128,7 +137,7 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Folder.html#var$children">Folder::$children</a> in Folder.php</div>
-							<div class="index-item-description">The list of child XBELNodes.</div>
+							<div class="index-item-description">The list of child Nodes.</div>
 					</dd>
 		</dl>
 	<a name="d"></a>
@@ -153,6 +162,13 @@
 		<div style="clear: both"></div>
 	</div>
 	<dl>
+			<dt class="field">
+						<span class="var-title">$folded</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Folder.html#var$folded">Folder::$folded</a> in Folder.php</div>
+							<div class="index-item-description">Whether or not this folder is currently collapsed.</div>
+					</dd>
 			<dt class="field">
 						Folder
 					</dt>
@@ -202,6 +218,36 @@
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Bookmark.html#var$href">Bookmark::$href</a> in Bookmark.php</div>
 							<div class="index-item-description">The HTTP destination of this bookmark.</div>
+					</dd>
+		</dl>
+	<a name="i"></a>
+	<div class="index-letter-section">
+		<div style="float: left" class="index-letter-title">i</div>
+		<div style="float: right"><a href="#top">top</a></div>
+		<div style="clear: both"></div>
+	</div>
+	<dl>
+			<dt class="field">
+						<span class="var-title">$id</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Node.html#var$id">Node::$id</a> in Node.php</div>
+							<div class="index-item-description">A textual identifier for this node. Aliases will use this to point to  this node.</div>
+					</dd>
+		</dl>
+	<a name="m"></a>
+	<div class="index-letter-section">
+		<div style="float: left" class="index-letter-title">m</div>
+		<div style="float: right"><a href="#top">top</a></div>
+		<div style="clear: both"></div>
+	</div>
+	<dl>
+			<dt class="field">
+						<span class="var-title">$modified</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Bookmark.html#var$modified">Bookmark::$modified</a> in Bookmark.php</div>
+							<div class="index-item-description">The last time this bookmark was edited.</div>
 					</dd>
 		</dl>
 	<a name="n"></a>
@@ -271,6 +317,7 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Separator.html">Separator</a> in Separator.php</div>
+							<div class="index-item-description">Represents a simple separator in a list of bookmarks. Literally, a line.</div>
 					</dd>
 		</dl>
 	<a name="t"></a>
@@ -280,6 +327,13 @@
 		<div style="clear: both"></div>
 	</div>
 	<dl>
+			<dt class="field">
+						<span class="var-title">$target</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Alias.html#var$target">Alias::$target</a> in Alias.php</div>
+							<div class="index-item-description">The target Node.</div>
+					</dd>
 			<dt class="field">
 						<span class="var-title">$title</span>
 					</dt>
@@ -317,10 +371,25 @@
 	</div>
 	<dl>
 			<dt class="field">
+						<span class="var-title">$visited</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Bookmark.html#var$visited">Bookmark::$visited</a> in Bookmark.php</div>
+							<div class="index-item-description">The last time this bookmark was visited.</div>
+					</dd>
+			<dt class="field">
 						<span class="method-title">visit</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="XBEL/Bookmark.html#methodvisit">Bookmark::visit()</a> in Bookmark.php</div>
+			<div class="index-item-details"><a href="XBEL/Folder.html#methodvisit">Folder::visit()</a> in Folder.php</div>
+							<div class="index-item-description">Visit this folder. Passes the visitor down to all contained elements.</div>
+					</dd>
+			<dt class="field">
+						<span class="method-title">visit</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Separator.html#methodvisit">Separator::visit()</a> in Separator.php</div>
+							<div class="index-item-description">Visit this separator.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">visit</span>
@@ -333,7 +402,7 @@
 						<span class="method-title">visit</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="XBEL/Separator.html#methodvisit">Separator::visit()</a> in Separator.php</div>
+			<div class="index-item-details"><a href="XBEL/Bookmark.html#methodvisit">Bookmark::visit()</a> in Bookmark.php</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">visit</span>
@@ -342,62 +411,56 @@
 			<div class="index-item-details"><a href="XBEL/Alias.html#methodvisit">Alias::visit()</a> in Alias.php</div>
 					</dd>
 			<dt class="field">
-						<span class="method-title">visit</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="XBEL/Folder.html#methodvisit">Folder::visit()</a> in Folder.php</div>
-					</dd>
-			<dt class="field">
 						<span class="method-title">visitAlias</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/XBELVisitor.html#methodvisitAlias">XBELVisitor::visitAlias()</a> in XBELVisitor.php</div>
+							<div class="index-item-description">Called when an alias is visited.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">visitAlias</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/AbstractXBELVisitor.html#methodvisitAlias">AbstractXBELVisitor::visitAlias()</a> in AbstractXBELVisitor.php</div>
-							<div class="index-item-description">Called when an alias is visited.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">visitBookmark</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/XBELVisitor.html#methodvisitBookmark">XBELVisitor::visitBookmark()</a> in XBELVisitor.php</div>
+							<div class="index-item-description">Called when a bookmark is visited.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">visitBookmark</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/AbstractXBELVisitor.html#methodvisitBookmark">AbstractXBELVisitor::visitBookmark()</a> in AbstractXBELVisitor.php</div>
-							<div class="index-item-description">Called when a bookmark is visited.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">visitFolder</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/XBELVisitor.html#methodvisitFolder">XBELVisitor::visitFolder()</a> in XBELVisitor.php</div>
+							<div class="index-item-description">Called when a folder is visited.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">visitFolder</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/AbstractXBELVisitor.html#methodvisitFolder">AbstractXBELVisitor::visitFolder()</a> in AbstractXBELVisitor.php</div>
-							<div class="index-item-description">Called when a folder is visited.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">visitSeparator</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/XBELVisitor.html#methodvisitSeparator">XBELVisitor::visitSeparator()</a> in XBELVisitor.php</div>
+							<div class="index-item-description">Called when a separator is visited.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">visitSeparator</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/AbstractXBELVisitor.html#methodvisitSeparator">AbstractXBELVisitor::visitSeparator()</a> in AbstractXBELVisitor.php</div>
-							<div class="index-item-description">Called when a separator is visited.</div>
 					</dd>
 		</dl>
 	<a name="x"></a>
@@ -430,6 +493,8 @@
 	<a class="index-letter" href="elementindex_XBEL.html#f">f</a>
 	<a class="index-letter" href="elementindex_XBEL.html#g">g</a>
 	<a class="index-letter" href="elementindex_XBEL.html#h">h</a>
+	<a class="index-letter" href="elementindex_XBEL.html#i">i</a>
+	<a class="index-letter" href="elementindex_XBEL.html#m">m</a>
 	<a class="index-letter" href="elementindex_XBEL.html#n">n</a>
 	<a class="index-letter" href="elementindex_XBEL.html#p">p</a>
 	<a class="index-letter" href="elementindex_XBEL.html#s">s</a>

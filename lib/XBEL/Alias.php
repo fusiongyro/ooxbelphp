@@ -9,7 +9,7 @@ namespace XBEL;
 class Alias
 {
 	/** 
-	 * @access private 
+	 * The target Node.
 	 */
 	var $target;
 	

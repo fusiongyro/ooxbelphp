@@ -26,7 +26,7 @@ class Bookmark extends Node
 	
 	function __construct($href)
 	{
-		// parent::__construct();
+		//parent::__construct();
 		$this->href = $href;
 	}
 	

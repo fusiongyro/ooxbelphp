@@ -4,7 +4,7 @@ Language 1.0//EN//XML"
 <xbel version="1.0">
   <title>Some of David's Bookmarks</title>
 
-  <folder>
+  <folder id="http-clients">
     <title>HTTP Clients</title>
 
     <bookmark href="http://www.netscape.com/download/">
@@ -15,13 +15,17 @@ Language 1.0//EN//XML"
       Netscape.</desc>
     </bookmark>
 
-    <bookmark href="http://www.opera.com/">
+		<separator/>
+		
+		<alias ref="opera"/>
+
+    <bookmark href="http://www.opera.com/" id="opera">
       <title>Opera</title>
 
       <desc>Opera -- Simply the Best Internet Experience</desc>
     </bookmark>
 
-    <bookmark href="http://www.microsoft.com/ie/">
+    <bookmark href="http://www.microsoft.com/ie/" visited="today">
       <title>Microsoft Internet Explorer</title>
 
       <desc>Internet Explorer 6 sets a new standard in privacy,
@@ -29,7 +33,7 @@ Language 1.0//EN//XML"
       is leading the way on the Web.</desc>
     </bookmark>
 
-    <bookmark href="http://lynx.browser.org/">
+    <bookmark href="http://lynx.browser.org/" modified="last week">
       <title>Lynx</title>
 
       <desc>Lynx is a fully-featured World Wide Web (WWW) client
@@ -69,6 +73,8 @@ Language 1.0//EN//XML"
       started a revolution. A new ingredient, XML, is poised to
       finish the job. by Jon Bosak and Tim Bray</desc>
     </bookmark>
+
+		<alias ref="http-clients"/>
 
     <bookmark
     href="http://www.sciam.com/2001/0501issue/0501berners-lee.html">

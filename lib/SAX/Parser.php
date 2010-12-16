@@ -156,6 +156,7 @@ class Parser
 	function parse($filename)
 	{
 		$fp = fopen($filename, 'r');
+		$this->startDocument();
 		while ($data = fread($fp, 4096)) 
 		{
 			if (!xml_parse($this->parser, $data, feof($fp))) 
@@ -165,6 +166,7 @@ class Parser
 				$this->handleError();
 			}
 		}
+		$this->endDocument();
 	}
 	
 	function __get($name)

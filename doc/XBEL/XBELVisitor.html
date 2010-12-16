@@ -53,17 +53,17 @@
 																<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#visitBookmark" title="details" class="method-name">visitBookmark</a>
-											(<span class="var-type"></span>&nbsp;<span class="var-name">$bookmark</span>)
+											(<span class="var-type">XBELBookmark</span>&nbsp;<span class="var-name">$bookmark</span>)
 									</div>
 																<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#visitFolder" title="details" class="method-name">visitFolder</a>
-											(<span class="var-type"></span>&nbsp;<span class="var-name">$folder</span>)
+											(<span class="var-type">XBELFolder</span>&nbsp;<span class="var-name">$folder</span>)
 									</div>
 																<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#visitSeparator" title="details" class="method-name">visitSeparator</a>
-											(<span class="var-type"></span>&nbsp;<span class="var-name">$separator</span>)
+											(<span class="var-type">XBELSeparator</span>&nbsp;<span class="var-name">$separator</span>)
 									</div>
 								</div>
 		</div>
@@ -85,10 +85,12 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">visitAlias</span> (line <span class="line-number">15</span>)
+		<span class="method-title">visitAlias</span> (line <span class="line-number">42</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Called when an alias is visited.</p>
+<p class="description"><p><strong>Note:</strong> the target of an alias is not automatically visited.  However, because the target must have an ID, it will be visited in its  natural setting at one point or another during processing, so this method  is probably only interesting to you if you're concerned primarily with  the structure of the bookmarks rather than the contents of them.</p></p>
 	<ul class="tags">
 				<li><span class="field">access:</span> public</li>
 			</ul>
@@ -113,10 +115,11 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">visitBookmark</span> (line <span class="line-number">13</span>)
+		<span class="method-title">visitBookmark</span> (line <span class="line-number">24</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Called when a bookmark is visited.</p>
 	<ul class="tags">
 				<li><span class="field">access:</span> public</li>
 			</ul>
@@ -126,13 +129,13 @@
 		<span class="method-name">
 			visitBookmark
 		</span>
-					(<span class="var-type"></span>&nbsp;<span class="var-name">$bookmark</span>)
+					(<span class="var-type">XBELBookmark</span>&nbsp;<span class="var-name">$bookmark</span>)
 			</div>
 	
 			<ul class="parameters">
 					<li>
-				<span class="var-type"></span>
-				<span class="var-name">$bookmark</span>			</li>
+				<span class="var-type">XBELBookmark</span>
+				<span class="var-name">$bookmark</span><span class="var-description">: the bookmark</span>			</li>
 				</ul>
 		
 			
@@ -141,10 +144,11 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">visitFolder</span> (line <span class="line-number">12</span>)
+		<span class="method-title">visitFolder</span> (line <span class="line-number">17</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Called when a folder is visited.</p>
 	<ul class="tags">
 				<li><span class="field">access:</span> public</li>
 			</ul>
@@ -154,13 +158,13 @@
 		<span class="method-name">
 			visitFolder
 		</span>
-					(<span class="var-type"></span>&nbsp;<span class="var-name">$folder</span>)
+					(<span class="var-type">XBELFolder</span>&nbsp;<span class="var-name">$folder</span>)
 			</div>
 	
 			<ul class="parameters">
 					<li>
-				<span class="var-type"></span>
-				<span class="var-name">$folder</span>			</li>
+				<span class="var-type">XBELFolder</span>
+				<span class="var-name">$folder</span><span class="var-description">: the folder</span>			</li>
 				</ul>
 		
 			
@@ -169,10 +173,11 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">visitSeparator</span> (line <span class="line-number">14</span>)
+		<span class="method-title">visitSeparator</span> (line <span class="line-number">31</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Called when a separator is visited.</p>
 	<ul class="tags">
 				<li><span class="field">access:</span> public</li>
 			</ul>
@@ -182,13 +187,13 @@
 		<span class="method-name">
 			visitSeparator
 		</span>
-					(<span class="var-type"></span>&nbsp;<span class="var-name">$separator</span>)
+					(<span class="var-type">XBELSeparator</span>&nbsp;<span class="var-name">$separator</span>)
 			</div>
 	
 			<ul class="parameters">
 					<li>
-				<span class="var-type"></span>
-				<span class="var-name">$separator</span>			</li>
+				<span class="var-type">XBELSeparator</span>
+				<span class="var-name">$separator</span><span class="var-description">: the separator</span>			</li>
 				</ul>
 		
 			
@@ -199,7 +204,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Wed, 15 Dec 2010 18:30:18 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Wed, 15 Dec 2010 23:12:07 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>
