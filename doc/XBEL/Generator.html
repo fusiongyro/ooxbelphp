@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Generator</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Generator</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A Visitor pattern implementation for XBEL documents.</p>
+<p class="description"><p>To use, subclass and override visitFolder or visitBookmark or both  per your needs. Then pass your instance to the visit method on XBELNode.</p></p>
+		<p class="notes">
+			Located in <a class="field" href="_lib---XBEL---Generator.php.html">/lib/XBEL/Generator.php</a> (line <span class="field">5</span>)
+		</p>
+		
+				
+		<pre><a href="../XBEL/AbstractXBELVisitor.html">AbstractXBELVisitor</a>
+   |
+   --Generator</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$PUBLIC_ID" title="details" class="var-name">$PUBLIC_ID</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$SYSTEM_ID" title="details" class="var-name">$SYSTEM_ID</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">XMLWriter</span>
+					<a href="#$writer" title="details" class="var-name">$writer</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																				<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#writeURI" title="details" class="method-name">writeURI</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$xbel</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$destination</span>)
+									</div>
+								
+												<div class="method-definition">
+											<span class="method-result">Generator</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$destination</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#afterVisitingFolder" title="details" class="method-name">afterVisitingFolder</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#beforeVisitingFolder" title="details" class="method-name">beforeVisitingFolder</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#process" title="details" class="method-name">process</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$xbel</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#visitAlias" title="details" class="method-name">visitAlias</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$alias</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#visitBookmark" title="details" class="method-name">visitBookmark</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$bookmark</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#visitSeparator" title="details" class="method-name">visitSeparator</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$sep</span>)
+									</div>
+																</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$PUBLIC_ID" id="$PUBLIC_ID"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$PUBLIC_ID</span>
+			 = <span class="var-default"> &quot;+//IDN python.org//DTD XML Bookmark Exchange Language 1.0//EN//XML&quot;</span>			(line <span class="line-number">11</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$SYSTEM_ID" id="$SYSTEM_ID"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$SYSTEM_ID</span>
+			 = <span class="var-default"> &quot;http://www.python.org/topics/xml/dtds/xbel-1.0.dtd&quot;</span>			(line <span class="line-number">12</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$writer" id="$writer"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">XMLWriter</span>
+			<span class="var-name">$writer</span>
+						(line <span class="line-number">9</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> the output writer</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodwriteURI" id="writeURI"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method writeURI</span> (line <span class="line-number">14</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			writeURI
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$xbel</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$destination</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$xbel</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$destination</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">20</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Generator</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$destination</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$destination</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodafterVisitingFolder" id="afterVisitingFolder"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">afterVisitingFolder</span> (line <span class="line-number">60</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			afterVisitingFolder
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$folder</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../XBEL/AbstractXBELVisitor.html#methodafterVisitingFolder">AbstractXBELVisitor::afterVisitingFolder()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbeforeVisitingFolder" id="beforeVisitingFolder"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">beforeVisitingFolder</span> (line <span class="line-number">50</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			beforeVisitingFolder
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$folder</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../XBEL/AbstractXBELVisitor.html#methodbeforeVisitingFolder">AbstractXBELVisitor::beforeVisitingFolder()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodprocess" id="process"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">process</span> (line <span class="line-number">26</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			process
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$xbel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$xbel</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodvisitAlias" id="visitAlias"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">visitAlias</span> (line <span class="line-number">43</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			visitAlias
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$alias</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$alias</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../XBEL/AbstractXBELVisitor.html#methodvisitAlias">AbstractXBELVisitor::visitAlias()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodvisitBookmark" id="visitBookmark"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">visitBookmark</span> (line <span class="line-number">65</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			visitBookmark
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$bookmark</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$bookmark</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../XBEL/AbstractXBELVisitor.html#methodvisitBookmark">AbstractXBELVisitor::visitBookmark()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodvisitSeparator" id="visitSeparator"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">visitSeparator</span> (line <span class="line-number">37</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			visitSeparator
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$sep</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sep</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../XBEL/AbstractXBELVisitor.html#methodvisitSeparator">AbstractXBELVisitor::visitSeparator()</a></dt>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../XBEL/AbstractXBELVisitor.html">AbstractXBELVisitor</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../XBEL/AbstractXBELVisitor.html#methodafterVisitingFolder">AbstractXBELVisitor::afterVisitingFolder()</a></span><br>
+													<span class="method-name"><a href="../XBEL/AbstractXBELVisitor.html#methodbeforeVisitingFolder">AbstractXBELVisitor::beforeVisitingFolder()</a></span><br>
+													<span class="method-name"><a href="../XBEL/AbstractXBELVisitor.html#methodvisitAlias">AbstractXBELVisitor::visitAlias()</a></span><br>
+													<span class="method-name"><a href="../XBEL/AbstractXBELVisitor.html#methodvisitBookmark">AbstractXBELVisitor::visitBookmark()</a></span><br>
+													<span class="method-name"><a href="../XBEL/AbstractXBELVisitor.html#methodvisitFolder">AbstractXBELVisitor::visitFolder()</a></span><br>
+													<span class="method-name"><a href="../XBEL/AbstractXBELVisitor.html#methodvisitSeparator">AbstractXBELVisitor::visitSeparator()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 16 Dec 2010 16:21:03 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

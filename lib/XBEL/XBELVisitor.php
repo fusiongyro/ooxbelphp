@@ -45,6 +45,18 @@ interface XBELVisitor
 	 * @param Alias $alias the alias
 	 */
 	public function visitAlias($alias);
+
+	/**
+	 * Called before visiting a folder.
+	 * @param Folder $folder the folder
+	 */
+	public function beforeVisitingFolder($folder);
+
+	/**
+	 * Called after visiting a folder.
+	 * @param Folder $folder the folder
+	 */
+	public function afterVisitingFolder($folder);
 }
 
 ?>

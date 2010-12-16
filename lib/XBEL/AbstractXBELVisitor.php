@@ -13,6 +13,9 @@ namespace XBEL;
  */
 class AbstractXBELVisitor implements XBELVisitor
 {
+    function beforeVisitingFolder($folder) {}
+    function afterVisitingFolder($folder) {}
+
 	function visitFolder($folder) {}
 	function visitBookmark($bookmark) {}	
 	function visitSeparator($separator) {}	

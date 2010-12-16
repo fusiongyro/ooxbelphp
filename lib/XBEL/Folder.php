@@ -28,10 +28,12 @@ class Folder extends NamedNode
 	 */
 	function visit($visitor)
 	{
-		$visitor->visitFolder($visitor);
+	    $visitor->beforeVisitingFolder($this);
+	    $visitor->visitFolder($this);
 		
 		foreach ($this->children as $child)
 			$child->visit($visitor);
+		$visitor->afterVisitingFolder($this);
 	}
 }
 
