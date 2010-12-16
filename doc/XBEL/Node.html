@@ -17,8 +17,7 @@
 	<div class="nav-bar">
 					<span class="disabled">Description</span> |
 							<a href="#sec-descendents">Descendents</a>
-			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
-						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+			|													<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
 						
 					</div>
 	<div class="info-box-body">
@@ -40,8 +39,7 @@
 		<div class="nav-bar">
 			<a href="#sec-description">Description</a> |
 			<span class="disabled">Descendents</span>
-			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
-								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+			|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
 							
 								</div>
 		<div class="info-box-body">
@@ -51,15 +49,9 @@
 					<th class="class-table-header">Description</th>
 				</tr>
 								<tr>
-					<td style="padding-right: 2em"><a href="../XBEL/Bookmark.html">Bookmark</a></td>
+					<td style="padding-right: 2em"><a href="../XBEL/NamedNode.html">NamedNode</a></td>
 					<td>
-											Represents a bookmark in XBEL.
-										</td>
-				</tr>
-								<tr>
-					<td style="padding-right: 2em"><a href="../XBEL/Folder.html">Folder</a></td>
-					<td>
-											Represents a folder in XBEL.
+											Parent class for all nameable/identifiable XBEL node types. In  practice, limited to Bookmark and Folder.
 										</td>
 				</tr>
 							</table>
@@ -67,38 +59,6 @@
 	</div>
 
 
-	<a name="sec-var-summary"></a>
-	<div class="info-box">
-		<div class="info-box-title">Variable Summary</span></div>
-		<div class="nav-bar">
-			<a href="#sec-description">Description</a> |
-							<a href="#sec-descendents">Descendents</a> |
-						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
-							| 
-									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
-							
-								</div>
-		<div class="info-box-body">
-			<div class="var-summary">
-																																																<div class="var-title">
-					<span class="var-type">mixed</span>
-					<a href="#$added" title="details" class="var-name">$added</a>
-				</div>
-																<div class="var-title">
-					<span class="var-type">mixed</span>
-					<a href="#$description" title="details" class="var-name">$description</a>
-				</div>
-																<div class="var-title">
-					<span class="var-type">mixed</span>
-					<a href="#$id" title="details" class="var-name">$id</a>
-				</div>
-																<div class="var-title">
-					<span class="var-type">mixed</span>
-					<a href="#$title" title="details" class="var-name">$title</a>
-				</div>
-											</div>
-		</div>
-	</div>
 
 	<a name="sec-method-summary"></a>
 	<div class="info-box">
@@ -106,10 +66,7 @@
 		<div class="nav-bar">
 			<a href="#sec-description">Description</a> |
 							<a href="#sec-descendents">Descendents</a> |
-																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
-				 
-				|
-						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
@@ -123,99 +80,6 @@
 		</div>
 	</div>		
 
-	<a name="sec-vars"></a>
-	<div class="info-box">
-		<div class="info-box-title">Variables</div>
-		<div class="nav-bar">
-			<a href="#sec-description">Description</a> |
-							<a href="#sec-descendents">Descendents</a> |
-										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
-						
-			
-										| 
-									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
-							
-					</div>
-		<div class="info-box-body">
-			<a name="var$added" id="$added"><!-- --></A>
-<div class="oddrow">
-
-	<div class="var-header">
-		<span class="var-title">
-			<span class="var-type">mixed</span>
-			<span class="var-name">$added</span>
-						(line <span class="line-number">33</span>)
-		</span>
-	</div>
-
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">A string indicating the date and/or time when this node was added to the  XBEL document.</p>
-	
-	
-		
-		
-
-</div>
-<a name="var$description" id="$description"><!-- --></A>
-<div class="evenrow">
-
-	<div class="var-header">
-		<span class="var-title">
-			<span class="var-type">mixed</span>
-			<span class="var-name">$description</span>
-						(line <span class="line-number">21</span>)
-		</span>
-	</div>
-
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">A textual description of this folder or bookmark.</p>
-	
-	
-		
-		
-
-</div>
-<a name="var$id" id="$id"><!-- --></A>
-<div class="oddrow">
-
-	<div class="var-header">
-		<span class="var-title">
-			<span class="var-type">mixed</span>
-			<span class="var-name">$id</span>
-						(line <span class="line-number">27</span>)
-		</span>
-	</div>
-
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">A textual identifier for this node. Aliases will use this to point to  this node.</p>
-	
-	
-		
-		
-
-</div>
-<a name="var$title" id="$title"><!-- --></A>
-<div class="evenrow">
-
-	<div class="var-header">
-		<span class="var-title">
-			<span class="var-type">mixed</span>
-			<span class="var-name">$title</span>
-						(line <span class="line-number">16</span>)
-		</span>
-	</div>
-
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">The title of this folder or bookmark.</p>
-	
-	
-		
-		
-
-</div>
-						
-		</div>
-	</div>
 	
 	<a name="sec-methods"></a>
 	<div class="info-box">
@@ -223,8 +87,7 @@
 		<div class="nav-bar">
 			<a href="#sec-description">Description</a> |
 							<a href="#sec-descendents">Descendents</a> |
-															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
-																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
 						
 		</div>
 		<div class="info-box-body">
@@ -234,7 +97,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">visit</span> (line <span class="line-number">43</span>)
+		<span class="method-title">visit</span> (line <span class="line-number">21</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -275,7 +138,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 16 Dec 2010 00:07:42 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Thu, 16 Dec 2010 13:48:19 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>
