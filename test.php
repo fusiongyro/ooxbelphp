@@ -20,7 +20,6 @@ error_reporting(E_ALL);
 ini_set('display_errors', true);
 ini_set('html_errors', false);
 
-require_once 'lib/SAX.php';
 require_once 'lib/XBEL.php';
 require_once 'lib/UrlGatherer.php';
 

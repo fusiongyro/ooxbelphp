@@ -8,6 +8,7 @@
 
 /** */
 
+require_once 'SAX.php';
 require_once 'XBEL/XBELVisitor.php';
 require_once 'XBEL/AbstractXBELVisitor.php';
 require_once 'XBEL/Node.php';
