@@ -371,6 +371,10 @@ class XBELParser extends SAXParser
 			case 'BOOKMARK':
 				$this->bookmark($attrs['HREF']);
 				break;
+			
+			case 'SEPARATOR':
+				$this->separator();
+				break;
 		}
 	}
 	
@@ -384,6 +388,12 @@ class XBELParser extends SAXParser
 	private function bookmark($href)
 	{
 		$this->pushNode(new XBELBookmark($href));
+	}
+	
+	// creates a separator
+	private function separator()
+	{
+		$this->currentElement()->children[] = new XBELSeparator();
 	}
 	
 	// fixes up the stack for a given node
@@ -443,6 +453,14 @@ class XBELNode
 	function visit($visitor) {}
 }
 
+class XBELSeparator
+{
+	function visit($visitor) 
+	{
+		$visitor->visitSeparator($this);
+	}
+}
+
 /** 
  * Represents a folder in XBEL. 
  * 
@@ -488,6 +506,43 @@ class XBELBookmark extends XBELNode
 	}
 }
 
+class XBELAlias
+{
+	/** 
+	 * @access private 
+	 */
+	var $target;
+	
+	function __construct($target)
+	{
+		$this->target = $target;
+	}
+	
+	function visit($visitor)
+	{
+		$visitor->visitAlias($this);
+		
+		// I waffle on whether we should automatically propagate this. I decided
+		// not to under the assumption that we already are processing it somewhere
+		// else in the document and it's easier to add this behavior on a 
+		// case-by-case basis than to remove it on a case-by-case basis.
+		// $visitor->visit($this->target);
+	}
+}
+
+/** 
+ * A Visitor pattern implementation for XBEL documents.
+ *
+ * @package OOTutorial
+ */
+interface XBELVisitor
+{
+	public function visitFolder($folder);
+	public function visitBookmark($bookmark);
+	public function visitSeparator($separator);
+	public function visitAlias($alias);
+}
+
 /** 
  * A Visitor pattern implementation for XBEL documents.
  * 
@@ -496,7 +551,7 @@ class XBELBookmark extends XBELNode
  *
  * @package OOTutorial
  */
-class XBELVisitor
+class AbstractXBELVisitor implements XBELVisitor
 {
 	/**
 	 * Called when a folder is visited.
@@ -511,6 +566,24 @@ class XBELVisitor
 	 * @param XBELBookmark $bookmark the bookmark
 	 */
 	function visitBookmark($bookmark) {}
+	
+	/**
+	 * Called when a separator is visited.
+	 *
+	 * @param XBELSeparator $separator the separator
+	 */
+	function visitSeparator($separator) {}
+	
+	/**
+	 * Called when an alias is visited.
+	 *
+	 * <b>Note:</b> the target of an alias is not automatically visited. 
+	 * However, because the target must have an ID, it will be visited in its
+	 * natural setting at one point or another during processing, so this method
+	 * is probably only interesting to you if you're concerned primarily with
+	 * the structure of the bookmarks rather than the contents of them.
+	 */
+	function visitAlias($alias) {}
 }
 
 /**
@@ -518,7 +591,7 @@ class XBELVisitor
  *
  * @package OOTutorial
  */
-class URLGatherer extends XBELVisitor
+class URLGatherer extends AbstractXBELVisitor
 {
 	/** @access private */
 	var $urls = array();
