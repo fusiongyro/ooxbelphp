@@ -24,8 +24,8 @@ require_once 'lib/SAX.php';
 require_once 'lib/XBEL.php';
 require_once 'lib/UrlGatherer.php';
 
-TagDisplay::run("example-xbel.xml");
-$bookmarks = XBELParser::parseXBEL("example-xbel.xml");
+SAX\TagDisplay::run("example-xbel.xml");
+$bookmarks = XBEL\XBELParser::parseXBEL("example-xbel.xml");
 var_dump($bookmarks);
 
 // gather up all the URLs

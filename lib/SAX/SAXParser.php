@@ -1,5 +1,7 @@
 <?php
 
+namespace SAX;
+
 /**
  * This is a simple OO wrapper around the PHP libxml SAX API to make it work
  * a little bit more like a "traditional" OO SAX API.

@@ -5,7 +5,7 @@
  *
  * @package OOTutorial
  */
-class URLGatherer extends AbstractXBELVisitor
+class URLGatherer extends XBEL\AbstractXBELVisitor
 {
 	/** @access private */
 	var $urls = array();

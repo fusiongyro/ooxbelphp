@@ -1,5 +1,7 @@
 <?php
 
+namespace XBEL;
+
 class XBELAlias
 {
 	/** 

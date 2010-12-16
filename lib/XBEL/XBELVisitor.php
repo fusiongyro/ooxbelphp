@@ -1,5 +1,7 @@
 <?php
 
+namespace XBEL;
+
 /** 
  * A Visitor pattern implementation for XBEL documents.
  *

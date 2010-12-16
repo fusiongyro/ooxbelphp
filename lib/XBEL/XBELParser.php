@@ -1,5 +1,7 @@
 <?php
 
+namespace XBEL;
+
 /** 
  * Parses XBEL: the XML Bookmark Exchange Language. 
  * 
@@ -32,7 +34,7 @@
  *
  * @package OOTutorial
  */
-class XBELParser extends SAXParser
+class XBELParser extends \SAX\SAXParser
 {
 	/** @access private */
 	var $elementStack = array();

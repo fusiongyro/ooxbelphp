@@ -1,5 +1,7 @@
 <?php
 
+namespace XBEL;
+
 /** 
  * Parent class for all XBEL node types. 
  *

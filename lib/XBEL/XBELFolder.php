@@ -1,5 +1,7 @@
 <?php
 
+namespace XBEL;
+
 /** 
  * Represents a folder in XBEL. 
  * 

@@ -1,5 +1,7 @@
 <?php
 
+namespace XBEL;
+
 /** 
  * Represents a bookmark in XBEL. 
  *
