@@ -13,9 +13,9 @@
 	<h3>Package indexes</h3>
 	<ul>
 				<li><a href="elementindex_test.html">test</a></li>
-					<li><a href="elementindex_default.html">default</a></li>
 					<li><a href="elementindex_SAX.html">SAX</a></li>
-					</ul>
+							<li><a href="elementindex_XBEL-Converters.html">XBEL-Converters</a></li>
+			</ul>
 <a href="elementindex.html">All elements</a>
 <br />
 <div class="index-letter-menu">
@@ -58,6 +58,7 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Generator.html#method__construct">Generator::__construct()</a> in Generator.php</div>
+							<div class="index-item-description">Constructs a new Generator writing to <var>$destination</var>.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">__construct</span>
@@ -249,7 +250,7 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Generator.html">Generator</a> in Generator.php</div>
-							<div class="index-item-description">A Visitor pattern implementation for XBEL documents.</div>
+							<div class="index-item-description">Converts XBEL nodes into their XML format.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">getRoot</span>
@@ -257,6 +258,12 @@
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Parser.html#methodgetRoot">Parser::getRoot()</a> in Parser.php</div>
 							<div class="index-item-description">Returns the root folder for this parse.</div>
+					</dd>
+			<dt class="field">
+						<span class="include-title">Generator.php</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/_lib---XBEL---Generator.php.html">Generator.php</a> in Generator.php</div>
 					</dd>
 		</dl>
 	<a name="h"></a>
@@ -346,12 +353,6 @@
 	</div>
 	<dl>
 			<dt class="field">
-						<span class="var-title">$PUBLIC_ID</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="XBEL/Generator.html#var$PUBLIC_ID">Generator::$PUBLIC_ID</a> in Generator.php</div>
-					</dd>
-			<dt class="field">
 						<span class="include-title">Parser.php</span>
 					</dt>
 		<dd class="index-item-body">
@@ -376,6 +377,13 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Generator.html#methodprocess">Generator::process()</a> in Generator.php</div>
+							<div class="index-item-description">Writes the XBEL document given in <var>$xbel</var> to the output URI  specified at construction time.</div>
+					</dd>
+			<dt class="field">
+						PUBLIC_ID
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Generator.html#constPUBLIC_ID">Generator::PUBLIC_ID</a> in Generator.php</div>
 					</dd>
 		</dl>
 	<a name="s"></a>
@@ -385,12 +393,6 @@
 		<div style="clear: both"></div>
 	</div>
 	<dl>
-			<dt class="field">
-						<span class="var-title">$SYSTEM_ID</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="XBEL/Generator.html#var$SYSTEM_ID">Generator::$SYSTEM_ID</a> in Generator.php</div>
-					</dd>
 			<dt class="field">
 						<span class="include-title">Separator.php</span>
 					</dt>
@@ -403,6 +405,12 @@
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Separator.html">Separator</a> in Separator.php</div>
 							<div class="index-item-description">Represents a simple separator in a list of bookmarks. Literally, a line.</div>
+					</dd>
+			<dt class="field">
+						SYSTEM_ID
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Generator.html#constSYSTEM_ID">Generator::SYSTEM_ID</a> in Generator.php</div>
 					</dd>
 		</dl>
 	<a name="t"></a>
@@ -576,16 +584,11 @@
 	</div>
 	<dl>
 			<dt class="field">
-						<span class="var-title">$writer</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="XBEL/Generator.html#var$writer">Generator::$writer</a> in Generator.php</div>
-					</dd>
-			<dt class="field">
 						<span class="method-title">writeURI</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Generator.html#methodwriteURI">Generator::writeURI()</a> in Generator.php</div>
+							<div class="index-item-description">Outputs <var>$xbel</var> to <var>$destination</var>, using an XMLWriter.</div>
 					</dd>
 		</dl>
 	<a name="x"></a>

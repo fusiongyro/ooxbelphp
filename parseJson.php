@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @package test
+ */
+
+/** */
 require_once 'lib/XBEL.php';
 
 $data = XBEL\Converters\FirefoxJson::parseFile("bookmarks.json");

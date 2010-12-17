@@ -13,9 +13,9 @@
 <h3>Package indexes</h3>
 <ul>
 	<li><a href="elementindex_test.html">test</a></li>
-	<li><a href="elementindex_default.html">default</a></li>
 	<li><a href="elementindex_SAX.html">SAX</a></li>
 	<li><a href="elementindex_XBEL.html">XBEL</a></li>
+	<li><a href="elementindex_XBEL-Converters.html">XBEL-Converters</a></li>
 </ul>
 <br />
 <div class="index-letter-menu">
@@ -217,7 +217,8 @@
 						FirefoxJson
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="default/FirefoxJson.html">FirefoxJson</a> in FirefoxJson.php</div>
+			<div class="index-item-details"><a href="XBEL-Converters/FirefoxJson.html">FirefoxJson</a> in FirefoxJson.php</div>
+							<div class="index-item-description">Converter for Firefox 3 JSON bookmarks.</div>
 					</dd>
 			<dt class="field">
 						Folder
@@ -230,7 +231,7 @@
 						<span class="include-title">FirefoxJson.php</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="default/_lib---XBEL---Converters---FirefoxJson.php.html">FirefoxJson.php</a> in FirefoxJson.php</div>
+			<div class="index-item-details"><a href="XBEL-Converters/_lib---XBEL---Converters---FirefoxJson.php.html">FirefoxJson.php</a> in FirefoxJson.php</div>
 					</dd>
 			<dt class="field">
 						<span class="include-title">Folder.php</span>
@@ -258,7 +259,7 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Generator.html">Generator</a> in Generator.php</div>
-							<div class="index-item-description">A Visitor pattern implementation for XBEL documents.</div>
+							<div class="index-item-description">Converts XBEL nodes into their XML format.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">getRoot</span>
@@ -271,7 +272,7 @@
 						<span class="include-title">Generator.php</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="default/_lib---XBEL---Generator.php.html">Generator.php</a> in Generator.php</div>
+			<div class="index-item-details"><a href="XBEL/_lib---XBEL---Generator.php.html">Generator.php</a> in Generator.php</div>
 					</dd>
 		</dl>
 	<a name="h"></a>
@@ -368,12 +369,6 @@
 	</div>
 	<dl>
 			<dt class="field">
-						<span class="var-title">$PUBLIC_ID</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="XBEL/Generator.html#var$PUBLIC_ID">Generator::$PUBLIC_ID</a> in Generator.php</div>
-					</dd>
-			<dt class="field">
 						<span class="include-title">Parser.php</span>
 					</dt>
 		<dd class="index-item-body">
@@ -396,20 +391,15 @@
 						<span class="method-title">parseFile</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="default/FirefoxJson.html#methodparseFile">FirefoxJson::parseFile()</a> in FirefoxJson.php</div>
+			<div class="index-item-details"><a href="XBEL-Converters/FirefoxJson.html#methodparseFile">FirefoxJson::parseFile()</a> in FirefoxJson.php</div>
+							<div class="index-item-description">Parses the Firefox 3 JSON bookmark file given in $filename.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">parseJSON</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="default/FirefoxJson.html#methodparseJSON">FirefoxJson::parseJSON()</a> in FirefoxJson.php</div>
-					</dd>
-			<dt class="field">
-						Parser
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="SAX/Parser.html">Parser</a> in Parser.php</div>
-							<div class="index-item-description">This is a simple OO wrapper around the PHP libxml SAX API to make it work  a little bit more like a &quot;traditional&quot; OO SAX API.</div>
+			<div class="index-item-details"><a href="XBEL-Converters/FirefoxJson.html#methodparseJSON">FirefoxJson::parseJSON()</a> in FirefoxJson.php</div>
+							<div class="index-item-description">Parses the Firefox 3 JSON bookmark data given in $json.</div>
 					</dd>
 			<dt class="field">
 						Parser
@@ -417,6 +407,13 @@
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Parser.html">Parser</a> in Parser.php</div>
 							<div class="index-item-description">Parses XBEL: the XML Bookmark Exchange Language.</div>
+					</dd>
+			<dt class="field">
+						Parser
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="SAX/Parser.html">Parser</a> in Parser.php</div>
+							<div class="index-item-description">This is a simple OO wrapper around the PHP libxml SAX API to make it work  a little bit more like a &quot;traditional&quot; OO SAX API.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">parseString</span>
@@ -437,6 +434,13 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Generator.html#methodprocess">Generator::process()</a> in Generator.php</div>
+							<div class="index-item-description">Writes the XBEL document given in <var>$xbel</var> to the output URI  specified at construction time.</div>
+					</dd>
+			<dt class="field">
+						PUBLIC_ID
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Generator.html#constPUBLIC_ID">Generator::PUBLIC_ID</a> in Generator.php</div>
 					</dd>
 		</dl>
 	<a name="r"></a>
@@ -461,12 +465,6 @@
 		<div style="clear: both"></div>
 	</div>
 	<dl>
-			<dt class="field">
-						<span class="var-title">$SYSTEM_ID</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="XBEL/Generator.html#var$SYSTEM_ID">Generator::$SYSTEM_ID</a> in Generator.php</div>
-					</dd>
 			<dt class="field">
 						<span class="include-title">SAX.php</span>
 					</dt>
@@ -499,6 +497,12 @@
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="SAX/Parser.html#methodstartElement">Parser::startElement()</a> in Parser.php</div>
 							<div class="index-item-description">Start tag event.</div>
+					</dd>
+			<dt class="field">
+						SYSTEM_ID
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="XBEL/Generator.html#constSYSTEM_ID">Generator::SYSTEM_ID</a> in Generator.php</div>
 					</dd>
 		</dl>
 	<a name="t"></a>
@@ -691,16 +695,11 @@
 	</div>
 	<dl>
 			<dt class="field">
-						<span class="var-title">$writer</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="XBEL/Generator.html#var$writer">Generator::$writer</a> in Generator.php</div>
-					</dd>
-			<dt class="field">
 						<span class="method-title">writeURI</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Generator.html#methodwriteURI">Generator::writeURI()</a> in Generator.php</div>
+							<div class="index-item-description">Outputs <var>$xbel</var> to <var>$destination</var>, using an XMLWriter.</div>
 					</dd>
 		</dl>
 	<a name="x"></a>
@@ -741,13 +740,6 @@
 						<span class="method-title">__construct</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="SAX/Parser.html#method__construct">Parser::__construct()</a> in Parser.php</div>
-							<div class="index-item-description">Empty constructor.</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">__construct</span>
-					</dt>
-		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Parser.html#method__construct">Parser::__construct()</a> in Parser.php</div>
 							<div class="index-item-description">Empty constructor. Be sure to pass up if you subclass.</div>
 					</dd>
@@ -755,7 +747,15 @@
 						<span class="method-title">__construct</span>
 					</dt>
 		<dd class="index-item-body">
+			<div class="index-item-details"><a href="SAX/Parser.html#method__construct">Parser::__construct()</a> in Parser.php</div>
+							<div class="index-item-description">Empty constructor.</div>
+					</dd>
+			<dt class="field">
+						<span class="method-title">__construct</span>
+					</dt>
+		<dd class="index-item-body">
 			<div class="index-item-details"><a href="XBEL/Generator.html#method__construct">Generator::__construct()</a> in Generator.php</div>
+							<div class="index-item-description">Constructs a new Generator writing to <var>$destination</var>.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">__construct</span>
